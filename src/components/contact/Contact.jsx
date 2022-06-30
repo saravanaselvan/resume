@@ -41,7 +41,7 @@ const Contact = ({ showOnlyPersonal }) => {
         externalLinks.map((link, index) => (
           <div key={index}>
             {link.icon}
-            <a href={link.text} target="_blank">
+            <a href={link.text} target="_blank" rel="noreferrer">
               {link.displayText}
             </a>
           </div>
