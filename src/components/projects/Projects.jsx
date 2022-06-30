@@ -11,12 +11,15 @@ const Projects = () => {
           <a
             href="https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.mocha-test-generator"
             target="_blank"
+            rel="noreferrer"
           >
             Generate Mocha Test
           </a>
           <a
             className="github__icon"
             href="https://github.com/saravanaselvan/generate-react-functional-component-with-css"
+            target="_blank"
+            rel="noreferrer"
           >
             <BsGithub />
           </a>
@@ -25,12 +28,15 @@ const Projects = () => {
           <a
             href="https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.generate-react-functional-component-with-css"
             target="_blank"
+            rel="noreferrer"
           >
             Create React Component
           </a>
           <a
             className="github__icon"
             href="https://github.com/saravanaselvan/mocha-test-generator"
+            target="_blank"
+            rel="noreferrer"
           >
             <BsGithub />
           </a>
