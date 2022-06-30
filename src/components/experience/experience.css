@@ -1,0 +1,59 @@
+.experience {
+  /* padding: 1rem; */
+  padding-top: 0;
+}
+.experience__project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.experience__project-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience__project-details {
+  margin-top: 0.5rem;
+}
+
+.experience__project-role {
+  color: var(--theme-color);
+  position: relative;
+}
+
+.experience__project-role::before {
+  /* content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--theme-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px; */
+}
+
+.experience__project::before {
+  content: "";
+  height: 120%;
+  width: 1px;
+  background-color: gray;
+  position: absolute;
+  left: -16px;
+  top: 10px;
+}
+
+.experience__project:last-child {
+  margin-bottom: 0;
+}
+.experience__project:last-child::before {
+  height: 90%;
+}
+
+small {
+  /* font-style: italic; */
+  font-weight: bold;
+  text-transform: uppercase;
+}

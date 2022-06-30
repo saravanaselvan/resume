@@ -1,0 +1,34 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  font-size: 0.75rem;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.contact__icon {
+  color: var(--theme-color);
+  margin-right: 0.7rem;
+  /* margin-top: 0.5rem; */
+  /* font-size: 0.9rem; */
+}
+
+.contact > div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.contact a,
+.contact a:visited {
+  color: var(--theme-color);
+  border-bottom: 1px solid var(--theme-color);
+}
+
+.contact a:hover {
+  color: var(--theme-color-dark);
+  border-bottom: 2px solid var(--theme-color-dark);
+}
+.contact__personal {
+  font-weight: bold;
+}

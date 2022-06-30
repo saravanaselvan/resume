@@ -1,0 +1,27 @@
+.education {
+  margin-top: 1rem;
+}
+
+.education__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.education__container-institute {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.education__container-course {
+  color: var(--theme-color);
+  position: relative;
+  font-weight: bold;
+}
+
+.education__container-institute > small {
+  text-transform: unset;
+  font-weight: normal;
+}

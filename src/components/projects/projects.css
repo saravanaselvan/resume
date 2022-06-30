@@ -1,0 +1,23 @@
+.projects {
+  margin-top: 1rem;
+}
+
+.projects p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.projects__title {
+  /* color: var(--theme-color); */
+  margin-bottom: 0.75rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a.github__icon {
+  border: none;
+  font-size: 1.3rem;
+}
