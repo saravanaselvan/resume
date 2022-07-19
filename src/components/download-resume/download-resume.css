@@ -15,4 +15,6 @@
 
 .download-resume a:hover {
   opacity: 1;
+  color: hsl(var(--clr-white));
+  border: none;
 }

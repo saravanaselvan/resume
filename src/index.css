@@ -53,6 +53,7 @@ h1 {
 .section-2 {
   /* background-color: #ddd; */
   margin-right: 1rem;
+  position: relative;
 }
 
 .resume-container {
