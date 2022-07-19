@@ -8,7 +8,7 @@ const Experience = () => {
         <h3 className="experience__project-role">Full Stack Developer</h3>
         <div className="experience__project-company">
           <small>Eleven Plus Exams</small>
-          <small>Nov 2019 - Jan 2022</small>
+          <small>Nov 2019 - Present</small>
         </div>
         <p className="experience__project-details">
           - Implemented Responsive layout in an application built with Angular
@@ -53,7 +53,7 @@ const Experience = () => {
       <div className="experience__project">
         <h3 className="experience__project-role">Full Stack Developer</h3>
         <div className="experience__project-company">
-          <small>Freelance</small>
+          <small>Eleven Plus Exams</small>
           <small>Jan 2014 - Sep 2016 </small>
         </div>
         <p className="experience__project-details">

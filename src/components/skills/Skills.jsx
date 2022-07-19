@@ -2,6 +2,7 @@ import "./skills.css";
 
 const skillSet = [
   "React JS",
+  "Redux",
   "Angular",
   "Javascript",
   "HTML/CSS",
