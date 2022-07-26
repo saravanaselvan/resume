@@ -8,7 +8,7 @@ const Experience = () => {
         <h3 className="experience__project-role">Full Stack Developer</h3>
         <div className="experience__project-company">
           <small>Eleven Plus Exams</small>
-          <small>Nov 2019 - Present</small>
+          <small>Nov 2019 - Jan 2022</small>
         </div>
         <p className="experience__project-details">
           - Implemented Responsive layout in an application built with Angular

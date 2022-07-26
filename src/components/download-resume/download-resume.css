@@ -18,3 +18,9 @@
   color: hsl(var(--clr-white));
   border: none;
 }
+
+@media print {
+  .download-resume {
+    display: none;
+  }
+}
