@@ -5,10 +5,30 @@ const Experience = () => {
     <div className="experience">
       <h3 className="section-title m-neg-1">Work Experience</h3>
       <div className="experience__project">
+        <h3 className="experience__project-role">
+          Senior Full Stack Developer
+        </h3>
+        <div className="experience__project-company">
+          <small>Photogauge India</small>
+          <small>Sep 2022 - Aug 2023</small>
+        </div>
+        <p className="experience__project-details">
+          - Built an admin facing React JS app using Redux & Chakra UI.
+          <br />
+          - Designed the full experience with features to edit YAML file, view
+          3D files in the browser using react-three-fiber, file/folder view of
+          S3 folder, gallery view for images and drag/drop file upload.
+          <br />
+          - Implemented AWS amplify for React JS app deployments reducing the
+          time taken from build to deployment without relying on Dev Ops
+          <br />
+        </p>
+      </div>
+      <div className="experience__project">
         <h3 className="experience__project-role">Full Stack Developer</h3>
         <div className="experience__project-company">
           <small>Eleven Plus Exams</small>
-          <small>Nov 2019 - Jan 2022</small>
+          <small>Nov 2019 - Aug 2022</small>
         </div>
         <p className="experience__project-details">
           - Implemented Responsive layout in an application built with Angular
@@ -21,11 +41,6 @@ const Experience = () => {
           - Created a tool to migrate data from student facing subscription
           platform to the parent facing application reducing 1 to 2 hours of
           manual work everyday. <br />
-          - Identified performance issues and implemented Redis Cache for
-          objects that do not change frequently. <br />
-          - Ensured tight cooperation with other engineers and business users
-          through active listening, systematic communication, and leadership
-          skills. <br />
         </p>
       </div>
       <div className="experience__project">
@@ -42,9 +57,9 @@ const Experience = () => {
           Angular CLI. <br />
           - Coordinated with DevOps team to implement automated deployment
           process using Jenkins. <br />
-          - Optimized the performance of a screen with 12 Angular material tabs
+          {/* - Optimized the performance of a screen with 12 Angular material tabs
           by implementing OnPush strategy. It made the screen work seamlessly
-          instead of taking 5 seconds to just select a radio button. <br />
+          instead of taking 5 seconds to just select a radio button. <br /> */}
           {/* - Created a VS Code extension to generate Mocha Test skeleton for
           Express JS controllers
           https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.mocha-test-generator */}
@@ -85,7 +100,7 @@ const Experience = () => {
         <p className="experience__project-details">
           - Involved in building web pages using YUI, DOJO, J2EE & DB2. <br />-
           Helped implement Lucene Search (document search similar to Elastic
-          Search) and conducted training sessions on the technical details.
+          Search)
         </p>
       </div>
     </div>

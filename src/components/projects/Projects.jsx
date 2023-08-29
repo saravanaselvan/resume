@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="projects">
       <h3 className="section-title">Projects</h3>
       <div>
-        <small className="projects__title">VS Code extensions:</small>
+        {/* <small className="projects__title">VS Code extensions:</small> */}
         <p>
           <a
             href="https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.mocha-test-generator"
@@ -35,6 +35,23 @@ const Projects = () => {
           <a
             className="github__icon"
             href="https://github.com/saravanaselvan/mocha-test-generator"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub />
+          </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/saravanaselvan/pg-timesheet"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Timesheet
+          </a>
+          <a
+            className="github__icon"
+            href="https://github.com/saravanaselvan/pg-timesheet"
             target="_blank"
             rel="noreferrer"
           >

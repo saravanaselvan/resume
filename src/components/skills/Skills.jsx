@@ -3,6 +3,8 @@ import "./skills.css";
 const skillSet = [
   "React JS",
   "Redux",
+  "Chakra UI",
+  "Mantine UI",
   "Angular",
   "Javascript",
   "HTML/CSS",
@@ -10,6 +12,8 @@ const skillSet = [
   "Express JS",
   "Ruby On Rails",
   "MySQL",
+  "Python",
+  "Fast API",
 ];
 const Skills = () => {
   return (
