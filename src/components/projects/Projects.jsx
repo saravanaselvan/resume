@@ -12,7 +12,7 @@ const personalProjects = [
   {
     title: "My Resume",
     description: "My resume built with React JS and deployed using Netlify",
-    titleLink: "https://github.com/saravanaselvan/resume",
+    titleLink: "https://spss-resume.netlify.app/",
     githubLink: "https://github.com/saravanaselvan/resume",
   },
   {
