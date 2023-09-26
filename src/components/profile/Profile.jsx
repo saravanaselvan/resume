@@ -1,8 +1,10 @@
+import DownloadResume from "../download-resume/DownloadResume";
 import "./profile.css";
 
 const Profile = () => {
   return (
     <div className="profile">
+      <DownloadResume />
       <h3 className="section-title">Profile</h3>
       <p>
         Experienced Senior Full Stack Developer with over 15+ years of expertise

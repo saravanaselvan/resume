@@ -11,7 +11,7 @@ const App = () => {
     <div className="container resume-container">
       <Header />
       {/* <section className="section-1"> */}
-      <DownloadResume />
+      {/* <DownloadResume /> */}
       <Profile />
       <Skills />
       {/* </section> */}

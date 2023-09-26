@@ -21,7 +21,7 @@ const experiences = [
       "Introduced responsive design in an application, combining Angular JS, Bootstrap, and Rails, enhancing the mobile user experience for exam purchases.",
       "Spearheaded the transition of an application from Angular JS to React JS, leveraging modern technology for improved performance.",
       "Architectured and built a subscription platform, integrated with Stripe, using Angular JS and Ruby on Rails, providing a streamlined payment experience.",
-      "Innovatively developed a data migration tool, automating a previously manual 1 to 2-hour task daily, facilitating smooth data transfer between student-facing and parent-facing platforms.",
+      "Built a data migration tool, automating a previously manual 1 to 2-hour task daily, facilitating smooth data transfer between student-facing and parent-facing platforms.",
     ],
   },
   {
@@ -43,8 +43,8 @@ const experiences = [
     company: "Eleven Plus Exams",
     duration: "Jan 2014 - Sep 2016",
     details: [
-      "Built an ecommerce web application to Book Exams & Manage Student reports with AngularJS, Bootstrap and Ruby On Rails. Integrated Stripe for handling payments.",
-      "Created a tool using JQuery, JCrop & ImageMagick for the teachers to Crop questions from PDF document and attach them with student reports.",
+      "Developed a robust e-commerce web application for booking exams and managing student reports, employing AngularJS, Bootstrap, and Ruby On Rails. Integrated Stripe to facilitate seamless payment processing.",
+      "Innovatively designed and implemented a custom tool using JQuery, JCrop, and ImageMagick, enabling teachers to efficiently crop questions from PDF documents and seamlessly attach them to student reports.",
     ],
   },
   {
@@ -63,8 +63,8 @@ const experiences = [
     company: "Aspire Systems",
     duration: "Oct 2006 - May 2010",
     details: [
-      "Involved in building web pages using YUI, DOJO, J2EE & DB2.",
-      "Helped implement Lucene Search (document search similar to Elastic Search)",
+      "Contributed to web page development using YUI, DOJO, J2EE, and DB2 technologies.",
+      "Played a pivotal role in the successful implementation of Lucene Search, providing advanced document search functionality akin to Elastic Search.",
     ],
   },
 ];
