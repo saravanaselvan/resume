@@ -35,9 +35,10 @@ const experiences = [
     details: [
       "Demonstrated expertise in adhering to best practices when constructing reusable components, employing Angular 2+ on the frontend and Node.js/Express.js on the backend.",
       "Led a successful initiative to upgrade Angular 2/Angular Seed to Angular 2+ with Angular CLI, ensuring the adoption of modern development tools and practices.",
-      "Collaborated effectively with the DevOps team to establish an automated deployment process using Jenkins, streamlining project delivery and reducing manual intervention.                           ",
+      "Collaborated effectively with the DevOps team to establish an automated deployment process using Jenkins, streamlining project delivery and reducing manual intervention.",
       "Achieved significant performance enhancements by optimizing a screen with 12 Angular Material tabs through the implementation of the OnPush strategy. This transformation resulted in seamless screen functionality, eliminating a prior 5-second delay even when selecting a radio button.",
-      "Innovatively developed a VS Code extension aimed at generating Mocha Test skeletons for Express.js controllers, enhancing testing efficiency and code quality.",
+      "Developed a VS Code extension to generating Mocha Test skeletons for Express.js controllers.",
+      "The automatic Mocha test generator vastly increased developer's productivity by reducing significant amount of time spent in writing boilerplate code.",
     ],
   },
   {
