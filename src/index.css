@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: 0;
-  list-style: none;
+  /* list-style: none; */
   text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ h1 {
 
 .container {
   width: var(--container-width-lg);
-  margin: 0 auto;
+  margin: 15px auto 15px auto;
 }
 
 .section-2 {
@@ -57,9 +57,9 @@ h1 {
 }
 
 .resume-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 30% 70%;
-  gap: 1.5rem;
+  gap: 1.5rem; */
 }
 
 section {
@@ -67,7 +67,7 @@ section {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.25rem;
 }
 
@@ -82,8 +82,8 @@ p {
 
 @media screen and (max-width: 750px) {
   .resume-container {
-    grid-template-columns: 1fr;
-    padding: 2rem;
+    /* grid-template-columns: 1fr; */
+    padding: 1rem;
   }
 }
 

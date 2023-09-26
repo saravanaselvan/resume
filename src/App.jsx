@@ -10,16 +10,16 @@ const App = () => {
   return (
     <div className="container resume-container">
       <Header />
-      <section className="section-1">
-        <Profile />
-        <Education />
-        <Skills />
-        <Projects />
-      </section>
-      <section className="section-2">
-        <DownloadResume />
-        <Experience />
-      </section>
+      {/* <section className="section-1"> */}
+      <DownloadResume />
+      <Profile />
+      <Skills />
+      {/* </section> */}
+      {/* <section className="section-2"> */}
+      <Experience />
+      <Projects />
+      <Education />
+      {/* </section> */}
     </div>
   );
 };

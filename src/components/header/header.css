@@ -1,12 +1,14 @@
 .header {
-  grid-column: span 2;
+  /* grid-column: span 2; */
   display: flex;
   justify-content: space-between;
   padding-right: 1rem;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 750px) {
   .header {
-    grid-column: 1;
+    /* grid-column: 1; */
+    flex-direction: column;
   }
 }

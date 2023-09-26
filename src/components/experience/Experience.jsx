@@ -1,108 +1,99 @@
 import "./experience.css";
 
+const experiences = [
+  {
+    role: "Senior Full Stack Developer",
+    tags: "React JS/Redux, Chakra UI, Typescript, AWS/S3, react-three-fiber, AngularJS, MySQL",
+    company: "Photogauge India",
+    duration: "Sep 2022 - Aug 2023",
+    details: [
+      "Created an administrative React JS application using Redux and Chakra UI, offering a comprehensive experience.",
+      "Designed functionalities encompassing YAML file editing, in-browser 3D file viewing using react-three-fiber, intuitive S3 folder file/folder navigation, image gallery viewing, and efficient drag-and-drop file uploads.",
+      "Leveraged AWS Amplify for streamlined React JS app deployments, significantly reducing the build-to-deployment timeline while eliminating the need for DevOps intervention.",
+    ],
+  },
+  {
+    role: "Senior Full Stack Developer",
+    tags: "Angular JS, React JS, Bootstrap, Ruby on Rails, MySQL",
+    company: "Eleven Plus Exams",
+    duration: "Nov 2019 - Aug 2022",
+    details: [
+      "Introduced responsive design in an application, combining Angular JS, Bootstrap, and Rails, enhancing the mobile user experience for exam purchases.",
+      "Spearheaded the transition of an application from Angular JS to React JS, leveraging modern technology for improved performance.",
+      "Architectured and built a subscription platform, integrated with Stripe, using Angular JS and Ruby on Rails, providing a streamlined payment experience.",
+      "Innovatively developed a data migration tool, automating a previously manual 1 to 2-hour task daily, facilitating smooth data transfer between student-facing and parent-facing platforms.",
+    ],
+  },
+  {
+    role: "Module Lead",
+    tags: "Angular 2.0, Node/Express JS, Typescript, AWS EC2",
+    company: "Aspire Systems",
+    duration: "Sep 2016 - Oct 2019",
+    details: [
+      "Demonstrated expertise in adhering to best practices when constructing reusable components, employing Angular 2+ on the frontend and Node.js/Express.js on the backend.",
+      "Led a successful initiative to upgrade Angular 2/Angular Seed to Angular 2+ with Angular CLI, ensuring the adoption of modern development tools and practices.",
+      "Collaborated effectively with the DevOps team to establish an automated deployment process using Jenkins, streamlining project delivery and reducing manual intervention.",
+      "Achieved significant performance enhancements by optimizing a screen with 12 Angular Material tabs through the implementation of the OnPush strategy. This transformation resulted in seamless screen functionality, eliminating a prior 5-second delay even when selecting a radio button.",
+      "Innovatively developed a VS Code extension aimed at generating Mocha Test skeletons for Express.js controllers, enhancing testing efficiency and code quality.",
+    ],
+  },
+  {
+    role: "Full Stack Developer",
+    tags: "Angular JS, React JS, Bootstrap, Ruby on Rails, MySQL",
+    company: "Eleven Plus Exams",
+    duration: "Jan 2014 - Sep 2016",
+    details: [
+      "Built an ecommerce web application to Book Exams & Manage Student reports with AngularJS, Bootstrap and Ruby On Rails. Integrated Stripe for handling payments.",
+      "Created a tool using JQuery, JCrop & ImageMagick for the teachers to Crop questions from PDF document and attach them with student reports.",
+    ],
+  },
+  {
+    role: "Lead Developer",
+    tags: "JQuery, Java, XML/XSLT",
+    company: "Tata Consultancy Services",
+    duration: "May 2010 - Jun 2013",
+    details: [
+      "Worked on enhancements and bug fixes in a web application built with XML/XSLT, JQuery, J2EE and Oracle.",
+      "Built a reusable JQuery plugin to move items between 2 list boxes.",
+    ],
+  },
+  {
+    role: "Software Developer",
+    tags: "Java, Servelet, JSP, YUI, DOJO",
+    company: "Aspire Systems",
+    duration: "Oct 2006 - May 2010",
+    details: [
+      "Involved in building web pages using YUI, DOJO, J2EE & DB2.",
+      "Helped implement Lucene Search (document search similar to Elastic Search)",
+    ],
+  },
+];
 const Experience = () => {
   return (
     <div className="experience">
       <h3 className="section-title m-neg-1">Work Experience</h3>
-      <div className="experience__project">
-        <h3 className="experience__project-role">
-          Senior Full Stack Developer
-        </h3>
-        <div className="experience__project-company">
-          <small>Photogauge India</small>
-          <small>Sep 2022 - Aug 2023</small>
+      {experiences.map((experience) => (
+        <div className="experience__project">
+          <h3 className="experience__project-role">
+            {experience.role}{" "}
+            <span style={{ color: "#575454", fontSize: "12px" }}>
+              {" "}
+              {experience.tags}
+            </span>
+          </h3>
+          <div className="experience__project-company">
+            <small>{experience.company}</small>
+            <small>{experience.duration}</small>
+          </div>
+          <p className="experience__project-details">
+            <ul>
+              {experience.details.map((detail) => (
+                <li>{detail}</li>
+              ))}
+            </ul>
+          </p>
         </div>
-        <p className="experience__project-details">
-          - Built an admin facing React JS app using Redux & Chakra UI.
-          <br />
-          - Designed the full experience with features to edit YAML file, view
-          3D files in the browser using react-three-fiber, file/folder view of
-          S3 folder, gallery view for images and drag/drop file upload.
-          <br />
-          - Implemented AWS amplify for React JS app deployments reducing the
-          time taken from build to deployment without relying on Dev Ops
-          <br />
-        </p>
-      </div>
-      <div className="experience__project">
-        <h3 className="experience__project-role">Full Stack Developer</h3>
-        <div className="experience__project-company">
-          <small>Eleven Plus Exams</small>
-          <small>Nov 2019 - Aug 2022</small>
-        </div>
-        <p className="experience__project-details">
-          - Implemented Responsive layout in an application built with Angular
-          JS, Bootstrap and Rails to help users to purchase exams from mobile
-          devices.
-          <br />- Initiated the upgrade of an application from Angular JS to
-          React JS. <br />
-          - Designed and developed a subscription platform integrated with
-          Stripe using Angular JS and Ruby on Rails. <br />
-          - Created a tool to migrate data from student facing subscription
-          platform to the parent facing application reducing 1 to 2 hours of
-          manual work everyday. <br />
-        </p>
-      </div>
-      <div className="experience__project">
-        <h3 className="experience__project-role">Module Lead</h3>
-        <div className="experience__project-company">
-          <small>Aspire Systems</small>
-          <small>Sep 2016 - Oct 2019</small>
-        </div>
-        <p className="experience__project-details">
-          - Followed best practices in building reusable components with Angular
-          2+ and Node JS/Express JS in the Backend.
-          <br />
-          - Lead the effort to upgrade Angular 2/Angular Seed to Angular 2+ with
-          Angular CLI. <br />
-          - Coordinated with DevOps team to implement automated deployment
-          process using Jenkins. <br />
-          {/* - Optimized the performance of a screen with 12 Angular material tabs
-          by implementing OnPush strategy. It made the screen work seamlessly
-          instead of taking 5 seconds to just select a radio button. <br /> */}
-          {/* - Created a VS Code extension to generate Mocha Test skeleton for
-          Express JS controllers
-          https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.mocha-test-generator */}
-        </p>
-      </div>
-      <div className="experience__project">
-        <h3 className="experience__project-role">Full Stack Developer</h3>
-        <div className="experience__project-company">
-          <small>Eleven Plus Exams</small>
-          <small>Jan 2014 - Sep 2016 </small>
-        </div>
-        <p className="experience__project-details">
-          - Built an ecommerce web application to Book Exams & Manage Student
-          reports with AngularJS, Bootstrap and Ruby On Rails. Integrated Stripe
-          for handling payments. <br />- Created a tool using JQuery, JCrop &
-          ImageMagick for the teachers to Crop questions from PDF document and
-          attach them with student reports.
-        </p>
-      </div>
-      <div className="experience__project">
-        <h3 className="experience__project-role">Lead Developer</h3>
-        <div className="experience__project-company">
-          <small>Tata Consultancy Services</small>
-          <small>May 2010 - Jun 2013</small>
-        </div>
-        <p className="experience__project-details">
-          - Worked on enhancements and bug fixes in a web application built with
-          XML/XSLT, JQuery, J2EE and Oracle. <br />- Built a reusable JQuery
-          plugin to move items between 2 list boxes.
-        </p>
-      </div>
-      <div className="experience__project">
-        <h3 className="experience__project-role">Software Developer</h3>
-        <div className="experience__project-company">
-          <small>Aspire Systems</small>
-          <small>Oct 2006 - May 2010</small>
-        </div>
-        <p className="experience__project-details">
-          - Involved in building web pages using YUI, DOJO, J2EE & DB2. <br />-
-          Helped implement Lucene Search (document search similar to Elastic
-          Search)
-        </p>
-      </div>
+      ))}
     </div>
   );
 };

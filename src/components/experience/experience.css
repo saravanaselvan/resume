@@ -18,6 +18,9 @@
   margin-top: 0.5rem;
 }
 
+.experience__project-details ul {
+  padding-inline-start: 40px;
+}
 .experience__project-role {
   color: var(--theme-color);
   position: relative;
@@ -36,13 +39,13 @@
 }
 
 .experience__project::before {
-  content: "";
+  /* content: "";
   height: 120%;
   width: 1px;
   background-color: gray;
   position: absolute;
   left: -16px;
-  top: 10px;
+  top: 10px; */
 }
 
 .experience__project:last-child {

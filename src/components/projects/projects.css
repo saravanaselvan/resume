@@ -3,8 +3,8 @@
 }
 
 .projects p {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   font-size: 1rem;
   margin-bottom: 0.75rem;
 }

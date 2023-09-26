@@ -5,10 +5,12 @@ const Profile = () => {
     <div className="profile">
       <h3 className="section-title">Profile</h3>
       <p>
-        Senior Full Stack Developer with 14 years of experience delivering
-        responsive web applications using HTML/CSS, Javascript, Angular JS,
-        Angular 2+, JQuery, React JS, Node JS/Express JS, Ruby on Rails and
-        MySQL.
+        Experienced Senior Full Stack Developer with over 15+ years of expertise
+        in crafting responsive web applications. Proficient in a wide range of
+        technologies including HTML/CSS, JavaScript, Angular (JS and 2+),
+        jQuery, React JS, Node.js/Express.js, Ruby on Rails, and MySQL. Skilled
+        in deploying applications to AWS EC2 instances and AWS Amplify, ensuring
+        seamless user experiences and optimal performance.
       </p>
     </div>
   );

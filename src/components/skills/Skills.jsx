@@ -7,13 +7,14 @@ const skillSet = [
   "Mantine UI",
   "Angular",
   "Javascript",
-  "HTML/CSS",
-  "Node JS",
-  "Express JS",
+  "Typescript",
+  // "HTML/CSS",
+  "Node/Express JS",
   "Ruby On Rails",
   "MySQL",
   "Python",
   "Fast API",
+  "Flask",
 ];
 const Skills = () => {
   return (
