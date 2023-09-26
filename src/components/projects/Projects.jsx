@@ -44,10 +44,10 @@ const Projects = () => {
   return (
     <div className="projects">
       <h3 className="section-title">Personal Projects</h3>
-      <ul style={{ paddingInlineStart: "40px" }}>
+      <ul style={{ paddingInlineStart: "30px" }}>
         {/* <small className="projects__title">VS Code extensions:</small> */}
         {personalProjects.map((project) => (
-          <li style={{ marginBottom: "10px" }}>
+          <li style={{ marginBottom: "5px" }} key={project.title}>
             <a
               href={project.titleLink}
               target="_blank"

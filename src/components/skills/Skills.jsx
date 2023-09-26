@@ -22,7 +22,7 @@ const Skills = () => {
       <h3 className="section-title">Skills</h3>
       <div className="skills__skill-sets">
         {skillSet.map((skill, index) => (
-          <div>{skill}</div>
+          <div key={index}>{skill}</div>
         ))}
       </div>
     </div>

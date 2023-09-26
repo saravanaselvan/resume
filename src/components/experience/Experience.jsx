@@ -2,6 +2,7 @@ import "./experience.css";
 
 const experiences = [
   {
+    id: 1,
     role: "Senior Full Stack Developer",
     tags: "React JS/Redux, Chakra UI, Typescript, AWS/S3, react-three-fiber, AngularJS, MySQL",
     company: "Photogauge India",
@@ -13,6 +14,7 @@ const experiences = [
     ],
   },
   {
+    id: 2,
     role: "Senior Full Stack Developer",
     tags: "Angular JS, React JS, Bootstrap, Ruby on Rails, MySQL",
     company: "Eleven Plus Exams",
@@ -25,6 +27,7 @@ const experiences = [
     ],
   },
   {
+    id: 3,
     role: "Module Lead",
     tags: "Angular 2.0, Node/Express JS, Typescript, AWS EC2",
     company: "Aspire Systems",
@@ -32,22 +35,24 @@ const experiences = [
     details: [
       "Demonstrated expertise in adhering to best practices when constructing reusable components, employing Angular 2+ on the frontend and Node.js/Express.js on the backend.",
       "Led a successful initiative to upgrade Angular 2/Angular Seed to Angular 2+ with Angular CLI, ensuring the adoption of modern development tools and practices.",
-      "Collaborated effectively with the DevOps team to establish an automated deployment process using Jenkins, streamlining project delivery and reducing manual intervention.",
+      "Collaborated effectively with the DevOps team to establish an automated deployment process using Jenkins, streamlining project delivery and reducing manual intervention.                           ",
       "Achieved significant performance enhancements by optimizing a screen with 12 Angular Material tabs through the implementation of the OnPush strategy. This transformation resulted in seamless screen functionality, eliminating a prior 5-second delay even when selecting a radio button.",
       "Innovatively developed a VS Code extension aimed at generating Mocha Test skeletons for Express.js controllers, enhancing testing efficiency and code quality.",
     ],
   },
   {
+    id: 4,
     role: "Full Stack Developer",
     tags: "Angular JS, React JS, Bootstrap, Ruby on Rails, MySQL",
     company: "Eleven Plus Exams",
     duration: "Jan 2014 - Sep 2016",
     details: [
       "Developed a robust e-commerce web application for booking exams and managing student reports, employing AngularJS, Bootstrap, and Ruby On Rails. Integrated Stripe to facilitate seamless payment processing.",
-      "Innovatively designed and implemented a custom tool using JQuery, JCrop, and ImageMagick, enabling teachers to efficiently crop questions from PDF documents and seamlessly attach them to student reports.",
+      "Creatively designed and implemented a custom tool using JQuery, JCrop, and ImageMagick, enabling teachers to efficiently crop questions from PDF documents and seamlessly attach them to student reports.",
     ],
   },
   {
+    id: 5,
     role: "Lead Developer",
     tags: "JQuery, Java, XML/XSLT",
     company: "Tata Consultancy Services",
@@ -58,6 +63,7 @@ const experiences = [
     ],
   },
   {
+    id: 6,
     role: "Software Developer",
     tags: "Java, Servelet, JSP, YUI, DOJO",
     company: "Aspire Systems",
@@ -73,7 +79,7 @@ const Experience = () => {
     <div className="experience">
       <h3 className="section-title m-neg-1">Work Experience</h3>
       {experiences.map((experience) => (
-        <div className="experience__project">
+        <div className="experience__project" key={experience.id}>
           <h3 className="experience__project-role">
             {experience.role}{" "}
             <span style={{ color: "#575454", fontSize: "12px" }}>
@@ -85,13 +91,13 @@ const Experience = () => {
             <small>{experience.company}</small>
             <small>{experience.duration}</small>
           </div>
-          <p className="experience__project-details">
+          <div className="experience__project-details">
             <ul>
-              {experience.details.map((detail) => (
-                <li>{detail}</li>
+              {experience.details.map((detail, index) => (
+                <li key={index}>{detail}</li>
               ))}
             </ul>
-          </p>
+          </div>
         </div>
       ))}
     </div>
